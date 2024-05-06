@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <script src="https://kit.fontawesome.com/54e73dd607.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+<style>
+    body {
+        font-size: 18 px;
+        margin: 6px;
+        padding: 6px;
+        overflow-x: hidden;
+        background-color: rgb(120, 135, 166);
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 150%;
+        background-size: cover;
+    }
+
+    .main h1 {
+        padding: 12px;
+        margin: 25px;
+        font-size: 30px;
+        font-weight: 800;
+        color: rgb(9, 7, 7);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: center;
+        border: 2px;
+    }
+
+    .main h1::after{
+        content: '';
+        background-color: rgb(69, 2, 4);
+        width: 100px;
+        height: 5px;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+    .main {
+        height: 400px;
+        flex-basis: 400px;
+        width: 60%;
+    }
+
+    .main form {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .form-outer {
+        width: 40%;
+        border-bottom: 2px solid rgb(63, 9, 114);
+        margin: 22px;
+
+    }
+
+    .form-outer label {
+
+        color: black;
+        font-weight: 800;
+    }
+
+    .form-outer input {
+
+        width: 60%;
+        padding: 4px;
+        font-size: 15px;
+        border: none;
+        text-align: center;
+        margin: 6px;
+        outline: none;
+        color: rgb(4, 3, 3);
+        border-radius: 4px;
+        background: none;
+    }
+
+    .form-outer i {
+        width: 18%;
+        text-align: left;
+        color: rgb(10, 8, 8);
+
+    }
+
+    select {
+        color: rgb(7, 7, 8);
+        width: 50%;
+        margin: 8px 0px;
+        padding: 12px 20px;
+        border-radius: 6px;
+        background-color: rgb(215, 206, 206);
+    }
+
+    .form-outer1 button {
+        background: none;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        outline: none;
+        width: 30%;
+        padding: 10px 0px;
+        font-weight: bolder;
+        border-radius: 10px;
+        margin: 22px;
+        padding: 10px;
+        border: 2px solid rgb(63, 9, 114);
+    }
+
+    .form-outer1 button:hover {
+        color: rgb(159, 22, 22);
+    }
+
+    .get {
+        float: right;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 100px;
+        width: 50%;
+    }
+
+    .get h3 {
+        font-size: 30px;
+        padding: 10px 0px;
+        margin: 10px 0px;
+    }
+
+    .get p {
+        font-size: 18px;
+        color: rgb(35, 14, 14);
+        text-align: justify;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    ul {
+        text-decoration: none;
+        color: black;
+        font-weight: 550;
+        cursor: pointer;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+
+    .get ul li {
+        text-decoration: none;
+    }
+
+    .get ul li:hover {
+        background-color: rgb(144, 139, 139);
+        text-decoration: underline;
+    }
+</style>
+
+<body>
+
+    <div class="main">
+        <h1>
+            Contact me for work / General Enquiries
+        </h1>
+
+        <form method="post" id="form">
+            <div id="res" style="color: rgb(64, 209, 16); font-size: 13px;"> </div>
+            <div class="form-outer">
+                <i class="fa-solid fa-user"></i>
+                <label> Enter Your Name</label>
+                <input type="text" name="name">
+            </div>
+
+            <div class="form-outer">
+                <i class="fa-solid fa-envelope"></i>
+                <label> Enter Your Email</label>
+                <input type="text" name="email">
+            </div>
+
+
+            <div class="form-outer">
+                <i class="fa-solid fa-phone"></i>
+                <label> Enter Your Password</label>
+                <input type="text" name="password">
+            </div>
+
+            <div class="form-outer">
+                <i class="fa-solid fa-envelope"></i>
+                <label> Enquiry</label>
+                <BR>
+                <input type="text" name="enquiry">
+            </div>
+
+            <select name="degree">
+                <option value="not selected">Select Your Course </option>
+                <option>BTech</option>
+                <option>BSc </option>
+                <option> BCA</option>
+                <option> BBA </option>
+                <option> MBA</option>
+
+            </select>
+            <BR>
+
+            <h3>Select your Gender</h3>
+            Male <input type="radio" value="male"><br>
+            Female <input type="radio" value="male"><br>
+            Others <input type="radio" value="male"><br>
+
+            <div class="form-outer1">
+                <button name="btn">Submit</button>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="get">
+        <h3>Get in touch</h3>
+        <p> Drop me a line, give me a call, or send me message by Submitting the form. </p>
+        <ul>
+            <li>Mobile No. : +91 8279786753</a></li>
+            <li> Email : mukulbhati3308@gmail.com </a></li>
+        </ul>
+    </div>
+
+
+
+
+    <script>
+
+        let url = 'https://script.google.com/macros/s/AKfycbyR754pSkOqaD59eQivSWbTQqHfDHwLi3ZEgp0G0SK5y22eNUnKXkMOsZsv8SKA9sbQ5Q/exec'
+
+        let form = document.querySelector('#form');
+        form.addEventListener("submit", (e) => {
+            e.target.btn.innerHTML = "Submitting....";
+            let d = new FormData(form);
+            fetch(url, {
+                method: "POST",
+                body: d
+            }).then((res) => res.text())
+                .then((finalRes) => {
+                    e.target.btn.innerHTML = 'submit';
+                    document.getElementById("res").innerHTML = finalRes;
+                    form.reset();
+                    setTimeout(() => {
+                        document.getElementById("res").innerHTML = '';
+                    }, 5000);
+
+                })
+            e.preventDefault();
+        })
+    </script>
+
+
+</body>
+
+</html>
